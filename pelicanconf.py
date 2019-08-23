@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Ahmad Syafrudin'
-SITENAME = u'py'
+AUTHOR = 'Ahmad Syafrudin'
+SITENAME = 'Blog python'
 SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'Asia/Jakarta'
 
-DEFAULT_LANG = u'en_US.UTF-8'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -29,9 +29,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-SITENAME = 'Codecodean'
-
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

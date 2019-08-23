@@ -12,9 +12,13 @@ notifications:
   email:
     on_success: always
     on_failure: always
-env:
-  global:
-  - secure: $secure
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  local_dir: output
+  on:
+    branch: master
 before_install:
 - git submodule update --init --recursive
 after_success: bash deploy.sh
