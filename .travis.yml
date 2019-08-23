@@ -12,9 +12,7 @@ notifications:
   email:
     on_success: always
     on_failure: always
-env:
-  global:
-  - secure: fn8o9CvGLH2acsCpY/aZI/fpWdTNT74q7ZQMcNcNy2ht26NJBLglff2Gf3pDUqKkzC+tF//w6cTzfazGA9WwfkKWwaVDvePGUNzJkUUwn87m3bfBDvH+q7d2oHDTZiziBz8XyBH3Z1HuZoH6r0297hIFHJHtJE574In+FGiE+6uARJElc5B2uV+Ce9f7f3jOAjnpxdvfLP4EdqM1GwAn1o52SlwOHtRiJydT/tRfO9KIgQC/4GGnwSxPqJQB1sMnQgbFq8qrruydGU+kIEZ6SfKS9ah09DIATGdHhZKzi4B2QqQW/JdoUJy5DrdT+3Tmr9v2kMWUWoSoVArJ8BgSREDC+hWzcZKjoZd1NGr4plvYde3xDIJE0D+3knSfmpe7OYRpLmXKaSvnDsZZ2YlZKimhHv7GA47iJXfy2ww2/7g8JnV4onNlSMkty7zSAAl8k6BBHbLDEo8aiutfLZGpcWmpGMXKOqMf1SBAA7UQKAY55/Lui6ZtqMKIhlV6MZYHOA9q5+6D/lbJ+7cnR7qWKTrxFfQQT5hQkf1zh8TFiTA8czCcy16J1tDZZH96lxfEVc9PH5++3BckMwQq8OEFx1gQ5xedtlfcy00wRUKngFlKlrFSA2RFu15kUkPa/6ztGJ+Y2UU7v5HoXJpj5vwhIGJcYfHeWKBQf9RssgueTdE=
+
 before_install:
 - git submodule update --init --recursive
 after_success: bash deploy.sh
